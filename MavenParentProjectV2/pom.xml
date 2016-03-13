@@ -3,18 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>MavenParentProject</artifactId>
+  <artifactId>MavenParentProjectV2</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>MavenParentProject</name>
-  <description>MavenParentProject</description>
+  <name>MavenParentProjectV2</name>
+  <description>MavenParentProjectV2</description>
   <modules>
-    <module>testBPEL</module>
-    <module>myProjectV3</module>
-    <module>XslTransform</module>
-    <module>XslTransform</module>
-    <module>E4XDirect</module>
-    <module>CompositeAppProject</module>
+    <module>MyFlow</module>
+    <module>MyComposite</module>
   </modules>
   <build>
     <plugins>

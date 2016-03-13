@@ -4,16 +4,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.example</groupId>
-    <artifactId>MavenParentProject</artifactId>
+    <artifactId>MavenParentProjectV2</artifactId>
     <version>1.0.0</version>
-    <relativePath>../../pom.xml</relativePath>
+    <relativePath>../pom.xml</relativePath>
   </parent>
-  <groupId>com.example.myProjectV3</groupId>
-  <artifactId>myProjectV3</artifactId>
+  <groupId>com.example.MyFlow</groupId>
+  <artifactId>MyFlow</artifactId>
   <version>1.0.0</version>
   <packaging>bpel/workflow</packaging>
-  <name>myProjectV3</name>
-  <description>myProjectV3</description>
+  <name>MyFlow</name>
+  <description>MyFlow</description>
   <properties>
     <CApp.type>bpel/workflow</CApp.type>
   </properties>

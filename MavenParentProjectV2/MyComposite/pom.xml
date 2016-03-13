@@ -2,50 +2,27 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example.CompositeAppProject</groupId>
-  <artifactId>CompositeAppProject</artifactId>
+  <parent>
+    <groupId>com.example</groupId>
+    <artifactId>MavenParentProjectV2</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <groupId>com.example.MyComposite</groupId>
+  <artifactId>MyComposite</artifactId>
   <version>1.0.0</version>
   <packaging>carbon/application</packaging>
-  <name>CompositeAppProject</name>
-  <description>CompositeAppProject</description>
+  <name>MyComposite</name>
+  <description>MyComposite</description>
   <properties>
-    <com.example.myProjectV3_._myProjectV3>capp/BusinessProcessServer</com.example.myProjectV3_._myProjectV3>
-    <com.example.testBPEL_._testBPEL>capp/BusinessProcessServer</com.example.testBPEL_._testBPEL>
-    <com.example.testBRProject_._testBRProject>capp/BusinessRulesServer</com.example.testBRProject_._testBRProject>
-    <com.example.E4XDirect_._E4XDirect>capp/BusinessProcessServer</com.example.E4XDirect_._E4XDirect>
-    <com.example.XslTransform_._XslTransform>capp/BusinessProcessServer</com.example.XslTransform_._XslTransform>
+    <com.example.MyFlow_._MyFlow>capp/BusinessProcessServer</com.example.MyFlow_._MyFlow>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,lib/registry/handlers=jar,service/rule=aar,lib/registry/filter=jar,synapse/message-store=xml,event/stream=json,service/meta=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,synapse/api=xml,wso2/gadget=dar,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.example.E4XDirect</groupId>
-      <artifactId>E4XDirect</artifactId>
+      <groupId>com.example.MyFlow</groupId>
+      <artifactId>MyFlow</artifactId>
       <version>1.0.0</version>
       <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.XslTransform</groupId>
-      <artifactId>XslTransform</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.myProjectV3</groupId>
-      <artifactId>myProjectV3</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.testBPEL</groupId>
-      <artifactId>testBPEL</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.testBRProject</groupId>
-      <artifactId>testBRProject</artifactId>
-      <version>1.0.0</version>
-      <type>aar</type>
     </dependency>
   </dependencies>
   <repositories>
